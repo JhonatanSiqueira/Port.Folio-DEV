@@ -1,0 +1,59 @@
+/* RESETA OS ESPAÇAMENTOS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* PALETA DE CORES */
+:root{
+    --clear: #47B5FF;
+    --dark: #06283D;
+    --ligth: #1363DF;
+    --sky: #DFF6FF;
+}
+
+/* CABEÇALHO */
+.header{
+    align-items: center;
+    background: var(--dark);
+    box-shadow: 0px 15px 10px -15px black;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-evenly;
+    position:fixed;
+    width: 100%; 
+}
+
+.header .header__logo {
+    align-items: center;
+    color:var(--sky);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.header__nav-links {
+    display: flex;
+    list-style: none;
+    
+}
+
+.header .header__nav .header__nav-links li {
+    margin: 10px;
+}
+
+.header .header__nav .header__nav-links li a {
+    color: var(--clear);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 400ms;
+}
+
+.header .header__nav .header__nav-links li a:hover{
+    color: var(--sky);
+    text-shadow: 0px 0px 10px var(--sky);
+    transition: 400ms;
+ }
+ /* FINAL DO CABEÇALHO */
+ 

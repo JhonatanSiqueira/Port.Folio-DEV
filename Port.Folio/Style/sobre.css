@@ -1,0 +1,32 @@
+#Sobre{
+    align-items: center;
+    background-color: var(--clear);
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.sobre__text {
+    color: var(--dark);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    width: 40%;
+}
+.sobre__text h1{
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align:center;
+}
+
+.sobre__image {
+    padding-right: 80px;
+}
+
+.sobre__image img{
+    border: 3px solid var(--dark);
+    border-radius: 12rem;
+    height: 270px;
+}
