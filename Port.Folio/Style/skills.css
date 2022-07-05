@@ -1,0 +1,71 @@
+#Skills{
+    align-items: center;
+    background-color: var(--dark);
+    display: flex;
+    height: 600px;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.skills__card {
+    display:inline-block;
+    height: 71%;
+    background: rgba(128, 128, 128, 0.486);
+    width: 20%;
+    text-align: center;
+}
+
+.line{
+    height: 350px;
+    border: 1px solid rgba(34, 221, 134, 0.733);
+}
+
+.skills__card-title{
+    background: #47cbff;
+    height: 25px;
+    padding: 10px;
+    border: 2px ridge rgb(0, 0, 0);
+    border-bottom: none;
+}
+
+.skills__card-title h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+
+.skills__card-list ul {
+    list-style: none;
+    align-items: center;
+}
+
+.skills__card-list {
+    height: 88%;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid black;
+}
+
+.skills__card-list ul img{
+    padding-top: 130px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.list-soft{
+    color: white;
+    font-weight: 200;
+    padding-top: 80px;
+    list-style: circle;
+    text-shadow: 1px  0px rgba(255, 255, 255, 0.575);
+    text-align: justify;
+}
+
+.list-soft li{
+    padding-top: 10px;
+    padding-left: 35px;
+    color: #ffffffb6;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+

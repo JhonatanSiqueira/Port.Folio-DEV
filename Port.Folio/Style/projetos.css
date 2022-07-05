@@ -1,0 +1,35 @@
+#Projetos{
+    background-color: var(--clear);
+    height: 600px;
+    text-align: center;
+    padding: 50px;
+}
+
+#Projetos h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;;
+    padding-bottom: 50px;
+}
+
+.owl-carousel{
+    border: 1px solid gray;
+    width: 1120px;
+}
+
+.owl__item {
+  display:block;
+  height: 300px;
+  width: 400px;
+  align-items:center;
+  flex-direction: column;
+}
+
+.owl__item title{
+    color: blueviolet;
+}
+
+.owl__item .button{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    
+}

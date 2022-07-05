@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;700&family=Rajdhani:wght@600&display=swap');
 #Home {
     align-items: center;
     background-color: var(--dark);
     display: flex;
-    height: 500px;
+    height: 600px;
     justify-content: space-evenly;
     padding-top: 4.25rem;
 }
@@ -24,10 +24,11 @@
     text-align: center;
     align-self: center;
     color: white;
-    font-family: 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', 'sans-serif';
-    font-size: 1.5rem;
-    margin-left: 70px;
+    font-family:'Roboto Mono', monospace;
+    font-size: 25px;
+    font-style: bold;
     width: 300px;
+    margin-left: 50px;
 }
 
 .home__text-icons {
@@ -58,6 +59,7 @@
     font-weight: bold;
     font-size: 13px;
     padding: 6px 10px;
+    transition: 2s;
     
     
     
@@ -78,6 +80,7 @@
     font-family: 'Press Start 2P', cursive;
     text-decoration: none;
     color:#ff9100;
+    transition: 0.5s;
 }
 
 .download a:hover {
