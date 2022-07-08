@@ -45,7 +45,7 @@
             <li><a href="#Home">Home</a></li>
             <li><a href="#Sobre">Sobre</a></li>
             <li><a href="#Skills">Skills</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#Projetos">Projetos</a></li>
           </ul>
         </nav>
       </div>
@@ -73,9 +73,9 @@
               target="_blank"
             ></a>
             <a
-              href="https://mail.google.com/mail/u/2/?ogbl#inbox"
+              href="https://codepen.io/jhonatansiqueira"
               target="_blank"
-              ><i class="fa fa-fw fa-envelope"></i
+              ><i class="fa fa-fw fa-codepen"></i
             ></a>
           </div>
         </div>
@@ -111,6 +111,7 @@
       </section>
 
       <section id="Skills">
+        
         <div class="skills__card">
           <header class="skills__card-title">
             <h2>- Hard Skills -</h2>
@@ -180,11 +181,18 @@
         <h1>-- PROJETOS --</h1>
 
         <div class="owl-carousel owl-theme redimensionar.coruja.carrossel">
+
+          <!-- Conversor de Dólar-->
           <div class="owl__item owl__card">
-            <header class="owl__card-title">título</header>
+
+            <header class="owl__card-title">Conversor de Dólar</header>
+
+
             <div class="owl__card-img">
               <img src="../Port.Folio/img/traderIMG.png" alt="Imagem do projeto do conversor de moedas" />
             </div>
+
+
             <div class="owl__card-button">
               <a
                 class="button"
@@ -195,8 +203,9 @@
             </div>
           </div>
 
+          <!-- MyAnimeList-->
           <div class="owl__item owl__card">
-            <header class="owl__card-title">título</header>
+            <header class="owl__card-title">MyAnimeList</header>
             <div class="owl__card-img">
               <img src="../Port.Folio/img/MALimg.png" alt="Imagem do projeto do listador de animes" />
             </div>
@@ -210,12 +219,13 @@
             </div>
           </div>
 
+          <!-- Super Trunfo-->
           <div class="owl__item owl__card">
-            <header class="owl__card-title">título</header>
+            <header class="owl__card-title">Super Trunfo</header>
             <div class="owl__card-img">
               <img
                 src="../Port.Folio/img/SPTimg.png"
-                alt=""
+                alt="Imagem do projeto Super Trunfo"
               />
             </div>
             <div class="owl__card-button">
@@ -228,53 +238,25 @@
             </div>
           </div>
 
+          <!-- VAZIO -->
           <div class="owl__item owl__card">
-            <header class="owl__card-title">título</header>
-            <div class="owl__card-img">
-              <img src="../Port.Folio/img/download.jpg" alt="" />
-            </div>
-            <div class="owl__card-button">
-              <a
-                class="button"
-                href="https://github.com/Gabrielmirandaxl/Valida-o-com-javascript"
-                target="_blank"
-                ><i class="fa fa-github" ></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="owl__item owl__card">
-            <header class="owl__card-title">título</header>
-            <div class="owl__card-img">
-              <img src="../Port.Folio/img/images.jpg" alt="" />
-            </div>
-            <div class="owl__card-button">
-              <a
-                class="button"
-                href="https://github.com/Gabrielmirandaxl/Valida-o-com-javascript"
-                target="_blank"
-                ><i class="fa fa-github" ></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="owl__item owl__card">
-            <header class="owl__card-title">título</header>
+            <header class="owl__card-title">Em Breve!</header>
             <div class="owl__card-img">
               <img
-                src="../Port.Folio/img/depositphotos_236069418-stock-photo-beautiful-red-sunset-natural-sunset.jpg"
-                alt=""
+                src="../Port.Folio/img/Captura de tela 2022-07-08 170929.png"
+                alt=" "
               />
             </div>
             <div class="owl__card-button">
               <a
                 class="button"
-                href="https://github.com/Gabrielmirandaxl/Valida-o-com-javascript"
+                href=""
                 target="_blank"
-                ><i class="fa fa-github" ></i
+                ><i class="fa fa-codepen" ></i
               ></a>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -301,10 +283,10 @@
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
-          loop: true,
+          loop: false,
           dots: true,
           nav: true,
-          center: true,
+          center: false,
           responsive: {
             0: {
               items: 1,

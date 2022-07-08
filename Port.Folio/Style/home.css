@@ -46,50 +46,6 @@
     border-radius: 5px;
 }
 
-.download {                  /*BOTÃO*/
-    width: 200px;
-    margin-top: 18px;
-    opacity: 0.5;
-    text-decoration: none;
-    border: 2px solid #ff9100;
-    border-radius: 4px;
-    display: inline-block;
-    cursor: pointer;
-    font-family: Verdana;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 6px 10px;
-    transition: 2s;
-    
-    
-    
-}
-
-.download:hover{
-    width: 200px;
-    border-radius: 8px;
-    text-decoration:underline;
-    opacity: 1;
-    background-color: black;
-    border: 1px solid #ff9100;
-}
-
-.download a {                   /*TEXTO DO BOTÃO*/
-    text-align: justify;
-    font-size: 15px;
-    font-family: 'Press Start 2P', 'cursive';
-    text-decoration: none;
-    color:#ff9100;
-    transition: 0.5s;
-}
-
-.download a:hover {
-    color:#ff9100;
-    font-size: 17px;
-    font-family: 'Press Start 2P', cursive;
-}
-
-
 .fa {
     font-size: 30px;
     margin-top: 15px;
@@ -122,9 +78,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
-.fa-envelope {
-    background: #1a660b;
-    color: white;
+.fa-codepen {
+    background: #f3f7f2c7;
+    color: rgb(19, 18, 20);
     height: 25px;
     width: 30px;
 }
