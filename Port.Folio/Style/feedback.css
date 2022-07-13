@@ -17,7 +17,7 @@
     background-color: rgb(216, 240, 6); 
     width: 90%;
     height: 60px;
-    
+    font-family: 'Roboto Mono', monospace;
 }
 
 form {
@@ -51,7 +51,7 @@ form label, form legend {
 	font-size: 18px;
 	border: none;
 	border-radius: 10px;
-	transition: 0.5s;
+	transition: 0.5s all;
 	cursor: pointer;
 }
 
@@ -62,3 +62,14 @@ form label, form legend {
     text-decoration: underline;
 }
 
+@media screen and (max-width:768px){
+    .mensagem{
+        width: 50%;
+    }
+    .feedback__title{
+        height:110px;
+    }
+    .form{
+        margin: 0;
+    }
+}

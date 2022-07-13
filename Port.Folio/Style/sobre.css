@@ -30,3 +30,28 @@
     border-radius: 12rem;
     height: 270px;
 }
+
+@media screen and (min-width:0){
+    .sobre__text{
+        width: 90%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .sobre__image{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .sobre__text{
+        height: 70%;
+        width: 50%;
+        font-size: 18px;
+        margin-right: 10px;
+        margin-left: 10px;
+    } 
+    .sobre__image{
+        display:block
+    }
+}

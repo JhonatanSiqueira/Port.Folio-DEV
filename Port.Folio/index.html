@@ -10,10 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+     
     <link rel="stylesheet" href="Style/header.css" />
     <link rel="stylesheet" href="Style/sobre.css" />
     <link rel="stylesheet" href="Style/home.css" />
@@ -44,11 +41,11 @@
 
         <nav class="header__nav">
           <ul class="header__nav-links">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projetos">Projetos</a></li>
-            <li><a href="#Feedback">Feedback</a></li>
+            <li><a href="#Home" class="scrollSuave">Home</a></li>
+            <li><a href="#Sobre" class="scrollSuave">Sobre</a></li>
+            <li><a href="#Skills" class="scrollSuave">Skills</a></li>
+            <li><a href="#Projetos" class="scrollSuave">Projetos</a></li>
+            <li><a href="#Feedback" class="scrollSuave">Feedback</a></li>
           </ul>
         </nav>
       </div>
@@ -97,7 +94,7 @@
         <div class="sobre__text">
           <h1>SOBRE MIM</h1>
           <p>
-            Olá, me chamo Jhonatan Siqueira, atualmente estou iniciando minha
+            Olá, me chamo JHONATAN SIQUEIRA, atualmente estou iniciando minha
             graduação em Análise e Desenvolvimento de Sistemas. Comecei na área
             de TI através de um curso técnico de manutenção e suporte em
             informática, onde estudei logica de programação com portugol e fiz
@@ -255,22 +252,61 @@
               ></a>
             </div>
           </div>
+
+          <!-- VAZIO -->
+          <div class="owl__item owl__card">
+            <header class="owl__card-title">Em Breve!</header>
+            <div class="owl__card-img">
+              <img
+                src="../Port.Folio/img/Captura de tela 2022-07-08 170929.png"
+                alt=" "
+              />
+            </div>
+            <div class="owl__card-button">
+              <a class="button" href="" target="_blank"
+                ><i class="fa fa-codepen"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- VAZIO -->
+          <div class="owl__item owl__card">
+            <header class="owl__card-title">Em Breve!</header>
+            <div class="owl__card-img">
+              <img
+                src="../Port.Folio/img/Captura de tela 2022-07-08 170929.png"
+                alt=" "
+              />
+            </div>
+            <div class="owl__card-button">
+              <a class="button" href="" target="_blank"
+                ><i class="fa fa-codepen"></i
+              ></a>
+            </div>
+          </div>
+          
+          <!-- VAZIO -->
+          <div class="owl__item owl__card">
+            <header class="owl__card-title">Em Breve!</header>
+            <div class="owl__card-img">
+              <img
+                src="../Port.Folio/img/Captura de tela 2022-07-08 170929.png"
+                alt=" "
+              />
+            </div>
+            <div class="owl__card-button">
+              <a class="button" href="" target="_blank"
+                ><i class="fa fa-codepen"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
 
       <section id="Feedback">
         <div class="feedback__title"><h1>Envie um FEEDBACK diretamente para meu e-mail!<br/> Propostas, críticas e qualquer outra mensagem será bem vinda.</h1></div>
 
-        <form  action="mailto:jhonatansiqueirap@gmail.com" method="post" enctype="text/plain">
+        <form class="form" action="mailto:jhonatansiqueirap@gmail.com" method="post" enctype="text/plain">
 
           <label for="nomesobrenome">Seu Nome:</label>
           <input type="text" id="nomesobrenome" class="input-padrao" required />
@@ -294,7 +330,7 @@
 
           <label for="mensagem">Sua mensagem:</label>
           <textarea
-            cols="70"
+            cols="50"
             rows="10"
             id="mensagem"
             class="input-padrao"
@@ -306,30 +342,30 @@
         </form>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
     <footer class="rodape">
-      <p class="copyright">&copy; Obrigado por visitar meu Port.Fólio! -2022-</p>
+      <p class="copyright"> "O tamanho do seu esforço é proporcional ao seu sonho." -Evandro Guedes &copy;  2022 </p>
     </footer>
 
+  <!-- Scripts referentes ao jquery e ao OWLCarousel -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+      var $doc = $('html, body');
+      $('.scrollSuave').click(function() {
+          $doc.animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+          return false;
+      });
+      </script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
@@ -340,10 +376,9 @@
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
+          nav: true,
           loop: false,
           dots: true,
-          nav: true,
-          center: false,
           responsive: {
             0: {
               items: 1,
@@ -351,7 +386,10 @@
             600: {
               items: 2,
             },
-            1200: {
+            1024: {
+              items:3,
+            },
+            1500: {
               items: 4,
             },
           },

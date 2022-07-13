@@ -25,7 +25,7 @@
     align-self: center;
     color: white;
     font-family:'Roboto Mono', monospace;
-    font-size: 25px;
+    font-size: 30px;
     font-style: bold;
     width: 300px;
     margin-left: 50px;
@@ -83,4 +83,37 @@
     color: rgb(19, 18, 20);
     height: 25px;
     width: 30px;
+}
+
+@media screen and (max-width:768px){
+    #Home{
+        height: 500px;
+    }
+    .home__image{
+        display: none;
+    }
+
+    .home__text{
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #Home{
+        width: 100%;
+        justify-content: center;
+    }
+    .home__image{
+        display: none;
+    }
+    .home__text{
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        font-size: 35px;
+        text-decoration:line-through;
+    }
+    
 }
